@@ -17,9 +17,9 @@
         <div class="contenedor contenido-header">
             <h1>Rock Festival</h1>
             <nav class="navegacion-principal">
-                <a href="">Line Up</a>
-                <a href="">Galeria</a>
-                <a href="">Boletos</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
             </nav>
         </div>
     </header>
@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <section class="lineup">
+    <section id='lineup' class="lineup">
         <h3>line up</h3>
         <p class="dia">viernes21</p>
         <div class="escenarios-contenedor contenedor">
@@ -136,7 +136,54 @@
         </div>
 
     </section>
+    <section id='galeria' class="galeria contenedor">
+        <h3>galeria</h3>
+        <ul class="galeria-imagenes">
 
+        </ul>
+    </section>
+
+    <section id='boletos' class="boletos bg-verde">
+        <h3>boletos</h3>
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>acceso a ambos escenario</li>
+                        <li>comida y bedidad</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$50000</p>
+                </footer>
+            </div>
+            <div class="premiun pase">
+                <p class="nombre-pase">Pase 2 dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>acceso a ambos escenario</li>
+                        <li>comida y bedidad</li>
+                        <li>camiseta del evento</li>
+                        <li>acceso vip</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100000</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p>Todos los derechos a sebastian carrillo</p>
+    </footer>
+    <script src="build/js/app.js"></script>
 </body>
 
 </html>

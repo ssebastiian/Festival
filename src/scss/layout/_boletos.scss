@@ -1,0 +1,59 @@
+@use 'base/variables' as v;
+.boletos {
+    padding: 5rem 0;
+    h3 {
+        text-align: center;
+        color: v.$blanco;
+    }
+    .contenedor-boletos {
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
+}
+
+.pase {
+    color: black;
+    .nombre-pase {
+        text-align: center;
+        font-size: 2.4rem;
+        color: v.$blanco;
+    }
+    &-header,
+    &-footer {
+        padding: .5rem;
+        p {
+            text-align: center;
+            color: v.$blanco;
+        }
+    }
+    &-header {
+        background-color: v.$rosa;
+        p {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+    }
+    &-body {
+        background-color: v.$blanco;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li,
+             :nth-child(odd) {
+                background-color: v.$blanco;
+                padding: 1rem;
+                border-bottom: 1px solid #e1e1e1;
+            }
+        }
+    }
+    &-footer {
+        background-color: v.$morado;
+        p {
+            font-size: 2.4rem;
+        }
+    }
+}
